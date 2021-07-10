@@ -139,7 +139,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/robjsmac/Documents/rob_train/ionic/ionic-youtube-api/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar color="danger">\n    <ion-title>\n      Playlist Search\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-item>\n    <ion-label stacked>Channel ID</ion-label>\n    <ion-input type="text" [(ngModel)]="channelId"></ion-input>\n  </ion-item>\n  <button full ion-button (click)="searchPlaylists()" [disabled]="channelId === \'\'" color="danger">Search Playlists</button>\n\n  <ion-list no-padding>\n    <button ion-item *ngFor="let list of playlists | async" (click)="openPlaylist(list.id)">\n      <ion-thumbnail item-start>\n      <img [src]="list.snippet.thumbnails.standard.url">\n    </ion-thumbnail>\n    <h2>{{ list.snippet.title }}</h2>\n    <p>{{ list.snippet.publishedAt | date:\'short\' }}</p>\n    </button>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/robjsmac/Documents/rob_train/ionic/ionic-youtube-api/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/home/egoru/1_work/ionic-youtube-api/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar color="danger">\n    <ion-title>\n      Playlist Search\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-item>\n    <ion-label stacked>Channel ID</ion-label>\n    <ion-input type="text" [(ngModel)]="channelId"></ion-input>\n  </ion-item>\n  <button full ion-button (click)="searchPlaylists()" [disabled]="channelId === \'\'" color="danger">Search Playlists</button>\n\n  <ion-list no-padding>\n    <button ion-item *ngFor="let list of playlists | async" (click)="openPlaylist(list.id)">\n      <ion-thumbnail item-start>\n      <img [src]="list.snippet.thumbnails.standard.url">\n    </ion-thumbnail>\n    <h2>{{ list.snippet.title }}</h2>\n    <p>{{ list.snippet.publishedAt | date:\'short\' }}</p>\n    </button>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"/home/egoru/1_work/ionic-youtube-api/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_0__providers_yt_yt__["a" /* YtProvider */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */]])
     ], HomePage);
@@ -269,7 +269,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/robjsmac/Documents/rob_train/ionic/ionic-youtube-api/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/robjsmac/Documents/rob_train/ionic/ionic-youtube-api/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/egoru/1_work/ionic-youtube-api/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/home/egoru/1_work/ionic-youtube-api/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
